@@ -27,9 +27,9 @@
     },
     data() {
       return {
-        image: "./assets/images/",
+        image: require('@/assets/ID5_White_Norway_Web-1024x683.jpg'),
         title: "Card Title",
-        text: "Some description text for the card.",
+        text: "Start your journey. Book a vehicle now!",
       };
     },
     methods: {
