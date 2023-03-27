@@ -1,7 +1,7 @@
 <!-- Footer.vue -->
 <template>
     <div class="footer">
-      <p>&copy; Your Company Name. All rights reserved.</p>
+      <p>&copy; Wheels2Go. All rights reserved.</p>
     </div>
   </template>
   
@@ -13,7 +13,7 @@
   
 <style>
   .footer {
-    background-color: #607d8b; /* Blue-grey */
+    background-image: linear-gradient(to right, #455a64, #90a4ae); /* Darker blue-grey to transparent */
     padding: 1rem;
     display: flex;
     align-items: center;

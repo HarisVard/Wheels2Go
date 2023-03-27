@@ -1,7 +1,7 @@
 <!-- AppBar.vue -->
 <template>
     <div class="app-bar">
-      <h1>Your App Name</h1>
+      <h1>Wheel2Go</h1>
       <!-- Add your menu or other elements here -->
     </div>
   </template>
@@ -14,7 +14,7 @@
   
 <style>
   .app-bar {
-    background-color: #607d8b; /* Blue-grey */
+    background-image: linear-gradient(to right, #455a64, #90a4ae); /* Darker blue-grey to transparent */
     padding: 1rem;
     display: flex;
     align-items: center;
