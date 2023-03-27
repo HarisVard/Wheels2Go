@@ -27,7 +27,7 @@
     },
     data() {
       return {
-        image: "./assets/",
+        image: "./assets/images/",
         title: "Card Title",
         text: "Some description text for the card.",
       };
