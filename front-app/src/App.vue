@@ -1,55 +1,37 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+  <div id="app">
+    <app-bar></app-bar>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+    <main>
+      <router-view></router-view>
+    </main>
 
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <router-view/>
-    </v-main>
-  </v-app>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
+import AppBar from "./components/AppBar.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
-
-  data: () => ({
-    //
-  }),
+  name: "App",
+  components: {
+    AppBar,
+    Footer,
+  },
 };
 </script>
+
+<style>
+/* Add any global CSS styles for your app layout here */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set the minimum height to the full viewport height */
+}
+
+main {
+  flex-grow: 1; /* Allow the main content to grow and push the footer to the bottom */
+}
+</style>
